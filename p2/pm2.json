@@ -1,0 +1,16 @@
+{
+    "apps" : [{
+        "name" : "p2App",
+        "script" : "./app.js",
+        "watch" : true,
+        "env" : {
+            "PROJECT_NAME" : "p2"
+        },
+        "ignore_watch" : ["node_modules"],
+        "instances" : 1,
+        "exec_mode" : "cluster"
+    }
+
+
+    ]
+}

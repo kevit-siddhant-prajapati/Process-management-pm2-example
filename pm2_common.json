@@ -1,0 +1,27 @@
+{
+    "apps" : [{
+        "name" : "p2App",
+        "cwd" : "/home/siddhant/Documents/Practice/PM2-Example/p2",
+        "script" : "./app.js",
+        "watch" : true,
+        "env" : {
+            "PROJECT_NAME" : "p2"
+        },
+        "ignore_watch" : ["node_modules"],
+        "instances" : 1,
+        "exec_mode" : "cluster"
+    },
+    {
+        "name" : "p1App",
+        "cwd" : "/home/siddhant/Documents/Practice/PM2-Example/p1",
+        "script" : "./app.js",
+        "watch" : true,
+        "env" : {
+            "PROJECT_NAME" : "p1"
+        },
+        "ignore_watch" : ["node_modules"],
+        "instances" : 1,
+        "exec_mode" : "cluster"
+    }
+    ]
+}
